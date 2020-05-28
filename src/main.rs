@@ -2,9 +2,11 @@ extern crate walkdir;
 extern crate crypto;
 extern crate rustc_serialize;
 use std::{env};
-use cypto::md5::md5
+use cypto::md5::md5;
 use crypto::digest::Digest;
-use 
+use std::fs::File;
+use std::io::prelude::*;
+
 
 fn main() {
     let mut paths: Vec<String> = vec![];
